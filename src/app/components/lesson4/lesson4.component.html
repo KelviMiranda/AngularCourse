@@ -1,0 +1,16 @@
+<h3> Diretiva Estrutural </h3>
+    <div *ngIf="isData else dataNotFound">
+        <ul>
+            <li>Nome do Objecto: {{object.nome}}</li>
+            <li>Idade: {{object.age}}</li>
+            <li>Job: {{object.job}}</li>
+            <li>isProgramator: {{object.isProgramtor}}</li>
+        </ul>
+    </div>
+
+    <ng-template #dataNotFound>
+        <h2 [ngClass]="emptyData" [ngStyle]="{'font-size':size + 'px'}">Dados não existentes</h2>
+    </ng-template>
+
+    <button (click)="event()">{{str}}</button>
+<hr>

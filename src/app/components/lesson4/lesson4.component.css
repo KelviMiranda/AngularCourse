@@ -1,0 +1,11 @@
+.redColor{
+    color:red;
+}
+
+.lineTrought{
+    text-decoration: line-through;
+}
+
+button{
+    cursor: pointer;
+}

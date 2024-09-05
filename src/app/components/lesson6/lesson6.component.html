@@ -1,0 +1,9 @@
+<h1>Renderizar as lista de dados</h1>
+<hr>
+<div *ngFor="let animal of animals">
+    <p>Nome:{{animal.nome | uppercase}} | Type: {{animal.type}}
+        <button (click)="showAge(animal)">Show age</button>
+        <button (click)="removeAnimal(animal)">Excluir</button>
+    </p>
+</div>
+<div>{{animalDetails}}</div>
